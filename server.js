@@ -22,7 +22,7 @@ const askQuestion = () => {
           "View Department",
           "View Role",
           "View Employee",
-          "Update Employee roles",          
+          "Update Employee roles",
           "Exit application",
         ],
       },
@@ -140,6 +140,7 @@ function addEmployee() {
           if (err) { console.log(err) }
         })
         console.log("You successfuly added a manager")
+        askQuestion()
       } else if (answer.boolean === 'no') {
         inquirer.prompt([{
           message: "What is manager id of the employee?",
