@@ -22,7 +22,7 @@ const askQuestion = () => {
           "View Department",
           "View Role",
           "View Employee",
-          "Update Employee roles",
+          "Update Employee roles",          
           "Exit application",
         ],
       },
