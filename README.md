@@ -30,6 +30,8 @@ This application allow user to track employee across vary departments. User can 
 
 To install necessary dependencies, run the following command:
 
+User need to add their user , password or local name on the 'index.js' in db folder In addition, user need to create employee_db in MySQL Workbench and using the command that can be found in schema.sql
+
 Use the command [ npm i ] to download all required dependencies
 
 ## Usage
