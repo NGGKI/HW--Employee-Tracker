@@ -8,6 +8,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+//ask user choice
 const askQuestion = () => {
   inquirer
     .prompt([
@@ -77,6 +78,7 @@ function addDepartment() {
       });
     });
 }
+//add role
 function addRole() {
   inquirer
     .prompt([
@@ -107,6 +109,7 @@ function addRole() {
       });
     });
 }
+//add employy
 function addEmployee() {
   inquirer
     .prompt([
@@ -162,6 +165,7 @@ function addEmployee() {
       }
     })
 }
+//view Department 
 function viewDepartment() {
   db.query('SELECT * FROM department', (err, department) => {
     if (err) { console.log(err) }
@@ -169,6 +173,7 @@ function viewDepartment() {
     askQuestion()
   })
 }
+//view Role
 function viewRole() {
   db.query('SELECT * FROM role', (err, role) => {
     if (err) { console.log(err) }
@@ -176,6 +181,7 @@ function viewRole() {
     askQuestion()
   })
 }
+//view Employee
 function viewEmployee() {
   db.query('SELECT * FROM employee', (err, employee) => {
     if (err) { console.log(err) }
@@ -183,6 +189,7 @@ function viewEmployee() {
     askQuestion()
   })
 }
+//update employee Role
 function updateEmployeerole() {
   inquirer.prompt([
     {
